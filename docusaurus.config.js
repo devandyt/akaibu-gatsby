@@ -1,13 +1,13 @@
 module.exports = {
   title: "Akaibu Gatsby",
   tagline: "Learn to use Gatsby for Web Development.",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://akaibu-gatsby.netlify.app/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "devandyt", // Usually your GitHub org/user name.
+  projectName: "devandyt", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Akaibu Gatsby",
@@ -22,9 +22,8 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/devandyt/akaibu-gatsby",
           label: "GitHub",
           position: "right",
         },
