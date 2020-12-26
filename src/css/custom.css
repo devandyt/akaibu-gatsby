@@ -37,7 +37,7 @@ code {
 }
 
 .admonition-note {
-  background: #fff7d2;
-  border-color: #fff7d2;
-  border-left: 6px solid #ffe564;
+  background: #fff7d2 !important;
+  border-color: #fff7d2 !important;
+  border-left: 6px solid #ffe564 !important;
 }
