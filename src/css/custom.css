@@ -34,10 +34,47 @@
 
 code {
   display: inline-block;
+  background: #e4e6e8;
+  border-radius: 0;
+  padding: 2px 4px;
+  line-height: normal;
+  color: #000;
+}
+
+html[data-theme="dark"] code {
+  background: #3c4146;
+  color: #fff;
 }
 
 .admonition-note {
   background: #fff7d2 !important;
   border-color: #fff7d2 !important;
   border-left: 6px solid #ffe564 !important;
+}
+html[data-theme="dark"] .admonition-note {
+  background: #38225d !important;
+  border-color: #38225d !important;
+  border-left: 6px solid #8763c5 !important;
+  color: #fff;
+}
+html[data-theme="dark"] .admonition-icon svg {
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+
+em {
+  background: #cfeafe;
+  padding: 0 2px;
+  color: #000;
+  font-style: normal;
+  font-size: 0.95em;
+}
+
+html[data-theme="dark"] em {
+  background: #056162;
+  color: rgba(241, 241, 242, 0.95);
+}
+
+html[data-theme="dark"] blockquote {
+  color: #bbb;
 }
