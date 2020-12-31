@@ -6,19 +6,15 @@ sidebar_label: Create Pages
 
 ## Simple Page Setup
 
-Creating pages in Gatsby is easy, just create files in /pages folder. By convention, the root page is _index.js_.
+Creating pages is easy, just create files in _pages/_. By convention, the root page is _index.js_.
 
-> _index.js_ for **home** page  
-> _About.js_ for **about** page  
-> _Contact.js_ for **contact** page
-
-:::note
-These file names show up in the URL, e.g. http://localhost:8000/about
-:::
+> _index.js_ for **http://localhost:8000/**  
+> _About.js_ for **http://localhost:8000/about**  
+> _Contact.js_ for **http://localhost:8000/contact**
 
 ## Familiarity
 
-Open _pages/index.js_, all we need to do to create a page is to create a react component and then `export default`.
+In _pages/index.js_, we see a page is basically a **react component** with `export default`.
 
 _index.js_
 
@@ -28,15 +24,15 @@ import React from "react"
 export default () => <div>Hello world!</div>
 ```
 
-Whatever we return from our component will be displayed in our page.
+Whatever we return from our component will be displayed.
 
 :::note
-This could be a class based component or a functional component. With arrival of react hooks, we use mostly functional components for both component and page component in Gatsby.
+We can use either a **class-based** component or a **functional** component. However, with **react hooks**, you will most likely use the latter.
 :::
 
-## Practice 1
+## Create Pages
 
-Inside /pages folder, create blog.js and products.js for the blog and products pages, respectively.
+Inside **pages/**., create _blog.js_ and _products_.js for the **blog** and **products** pages, respectively.
 
 _blog.js_
 
@@ -70,11 +66,13 @@ export default class products extends Components {
 }
 ```
 
-Navigate to https://localhost:8000/blog and https://localhost:8000/products to see the pages.
+Navigate to **https://localhost:8000/blog** and **https://localhost:8000/products** to see the pages.
 
 ## 404 Page
 
-Simply create a file _404.js_ to represent all error pages.
+Create _404.js_ for all **error** pages.
+
+_404.js_
 
 ```jsx
 import React from "react"
@@ -88,11 +86,11 @@ export default function error() {
 }
 ```
 
-The error page can only be seen when application is deployed.
+The error page only displays when application is **deployed** in production.
 
 :::note
 Use the following shortcuts to quickly create component snippets:  
-`rafce` - unnamed arrow functional component  
-`rfc` - named functional component  
-`rcc` - named class-based component
+`rafce` - unnamed **arrow** functional component  
+`rfc` - named **functional** component  
+`rcc` - named **class-based** component
 :::

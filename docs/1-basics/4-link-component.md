@@ -6,25 +6,8 @@ sidebar_label: Link Component
 
 ## Navigation
 
-We could always use an html `<a>` element, but this method reloads the whole page when loading a new page.
-
-`pages/index.js`
-
-```jsx
-import React from "react"
-
-export default () => (
-  <div>
-    Hello world!
-    <div>
-      <a href="/blog/">blog page</a>
-    </div>
-    <a href="https://www.gatsbyjs.org">gatsby docs</a>
-  </div>
-)
-```
-
-That is why we should use the `<Link>` element, which only reloads the changes. However, external links will still use the html `<a>` method.
+- For **external** links, use html `<a>` element.
+- For **internal** links, use react `<Link>` component.
 
 `pages/index.js`
 
@@ -42,3 +25,5 @@ export default () => (
   </div>
 )
 ```
+
+The `<Link>` component ensures only the changed parts are reloaded when navigating the site. This makes the site super fast and smooth.

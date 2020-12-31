@@ -6,11 +6,9 @@ sidebar_label: Navbar
 
 ## Setting Up
 
-No point in hardcoding links on every page. We need a way to reuse the links on all pages.
+Hardcoding links on every page is a bad idea. Create a **Navbar** component instead.
 
-By convension, usually you set up a /src/components/ folder to store your components.
-
-Create Navbar.js component inside the folder.
+Create component _Navbar.js_ inside a new folder _src/components/_.
 
 _components/Navbar.js_
 
@@ -39,7 +37,7 @@ const Navbar = () => {
 export default Navbar
 ```
 
-Next we need to use this component in our pages.
+We can reuse this **Navbar** component in our pages.
 
 _pages/index.js_
 
@@ -60,6 +58,41 @@ export default () => (
 )
 ```
 
-## Practice 1
+## Challenge
 
-Try adding Navbar components to the blog and products pages.
+Add the new **Navbar** component to the blog and products pages.
+
+_blog.js_
+
+```jsx
+import React from "react"
+import Navbar from "../components/Navbar"
+
+export const blog = () => {
+  return (
+    <div>
+      <Navbar />
+      <h1>Our blog page</h1>
+    </div>
+  )
+}
+
+export default blog
+```
+
+_products.js_
+
+```jsx
+import React, { Component } from "react"
+
+export default class products extends Components {
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <h1>Our products page</h1>
+      </div>
+    )
+  }
+}
+```
