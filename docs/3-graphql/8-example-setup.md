@@ -20,6 +20,8 @@ const examples = () => {
     </div>
   )
 }
+
+export default examples
 ```
 
 Add examples page to the navbar.

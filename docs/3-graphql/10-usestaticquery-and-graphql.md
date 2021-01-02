@@ -19,6 +19,8 @@ const examples = () => {
     </Layout>
   )
 }
+
+export default examples
 ```
 
 Delete everything in Header.js. We will create useStaticQuery from scratch.
