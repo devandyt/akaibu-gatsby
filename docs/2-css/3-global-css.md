@@ -8,7 +8,7 @@ sidebar_label: Global CSS
 
 This option involves creating a seperate CSS file and then apply it to an engolfing JSX element. It makes sense to apply it to the layout component because it wraps all the pages.
 
-Create a components/layout.css.
+Create the css file.
 
 _components/layout.css_
 

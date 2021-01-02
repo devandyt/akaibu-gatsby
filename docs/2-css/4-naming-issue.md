@@ -38,8 +38,10 @@ import Layout from "../components/layout"
 export const blog = () => {
   return (
     <Layout>
-      <h1>Our blog page</h1>
-      <p className="blog-text">some text</p>
+      <div>
+        <h1>Our blog page</h1>
+        <p className="blog-text">some text</p>
+      </div>
     </Layout>
   )
 }
@@ -57,8 +59,10 @@ export default class products extends Components {
   render() {
     return (
       <Layout>
-        <h1>Our products page</h1>
-        <p className="products-text">some text</p>
+        <div>
+          <h1>Our products page</h1>
+          <p className="products-text">some text</p>
+        </div>
       </Layout>
     )
   }

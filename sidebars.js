@@ -28,7 +28,7 @@ module.exports = {
       "3-graphql/6-explorer-example",
       "3-graphql/7-render-intro",
       "3-graphql/8-example-setup",
-      "3-graphql/9-code-explorer-usestaticquery",
+      "3-graphql/9-code-exporter-usestaticquery",
       "3-graphql/10-usestaticquery-and-graphql",
       "3-graphql/11-field-alias",
       "3-graphql/12-query-keyword-and-name",
