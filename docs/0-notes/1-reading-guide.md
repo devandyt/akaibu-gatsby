@@ -5,7 +5,7 @@ sidebar_label: Reading Guide
 slug: /
 ---
 
-To keep content nice and tidy, we style wording according to their meaning consistently.
+For consistency, style is assigned to words according to their meaning.
 
 | Word Styling | Desc                                 |
 | ------------ | ------------------------------------ |
